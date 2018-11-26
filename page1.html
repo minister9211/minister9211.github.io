@@ -1,0 +1,142 @@
+<html>
+<head>
+<style>
+body, html {
+ height: 100%;
+ margin: 0;
+ font: 400 15px/1.8 "Lato", sans-serif;
+ background-image: url("slider.jpg");
+ background-attachment: fixed;
+ background-position: center;
+ background-size: cover;
+}
+
+.table {
+  position: absolute;
+  top: 7.5%;
+  width: 90%;
+}
+
+.tableleft {
+  position: absolute;
+  top: 7.5%;
+  width: 35%; 
+}
+
+h3 {
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: black;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.btn {
+    background-color: rgb(228, 153, 15);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: green;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="main.html">Back</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+  </div>
+  
+ <div class="tableleft">
+        <form action="/action_page.php" class="container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+          </form>
+          </div>
+
+<div class="table">
+  <form action="/action_page.php" class="container">
+    <h1>Signup</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+   
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="btn">Signup</button>
+  </form></div>
+
+
+</body>
+</html>
